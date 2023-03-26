@@ -1,0 +1,11 @@
+int main(){
+    int a,b;
+    b = 10;
+    a+++=++b;
+    a = b+7;
+    a+=b;
+
+    printf("b=%d",a,b);
+
+    return 0;
+} 

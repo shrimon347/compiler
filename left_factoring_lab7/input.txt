@@ -1,0 +1,4 @@
+Enter Production : A->aE+bcD|aE+eIT
+
+A->aE+X   
+X->bcD|eIT

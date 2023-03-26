@@ -1,0 +1,13 @@
+Enter the Non-Terminal : A
+Enter the number of productions : 4
+Enter Production 1 : Ac
+Enter Production 2 : Aad
+Enter Production 3 : bd
+Enter Production 4 : c
+
+Production Rule : A->Ac|Aad|bd|c
+
+After eliminating left recursion the grammar is : 
+
+A->bdA'|cA'|
+A'->cA'|adA'|#
