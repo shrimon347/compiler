@@ -26,7 +26,7 @@ int main(){
     }
     cout<<endl<<"Production Rule : "<<ip<<endl;
 
-    cout<<endl<<"After eliminating left recursion the grammar is : "<<endl<<endl;
+   
     for(int i=0,k=3;i<n;i++)
     {
         if(ip[0] == ip[k])
@@ -43,7 +43,7 @@ int main(){
         }
         else
         {
-            //cout<<"Production "<<i+1<<" does not have left recursion."<<endl;
+            cout<<endl<<"Production "<<i+1<<" does not have left recursion."<<endl;
             if(ip[k] != '#')
             {
                 for(j=k;j<k+sizes[i];j++)
@@ -56,7 +56,10 @@ int main(){
             {
                 op2.push_back(ip[0]);
                 op2 += "\'";
-            }}}
+            }
+        }
+    }
+    cout<<endl<<"After eliminating left recursion the grammar is : "<<endl<<endl;
     op1 += "#";
     cout<<op2<<endl;
     cout<<op1<<endl;
